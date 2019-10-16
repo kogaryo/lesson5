@@ -40,7 +40,7 @@
 			float4 frag(v2f_customrendertexture i) : SV_Target
 			{
 				float noise = Noise(i.globalTexcoord * 10 + _Time.y)* 0.5 + 0.5;
-				return float4 (noise, noise, noise, 1);
+				return float4 (noise, noise+40, noise, 1);
 			}
 			ENDCG
 		}

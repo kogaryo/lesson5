@@ -44,7 +44,7 @@
 					+ (Noise(i.globalTexcoord * 8.0 + _Time.y * 0.20)) * 0.5
 					+ (Noise(i.globalTexcoord * 16.0 + _Time.y * 0.80)) * 0.25;
 		noise = noise / (1.0 + 0.5 + 0.25) * 0.5 + 0.5;
-		return float4 (noise, noise, noise, 1);
+		return float4 (noise, noise, noise+30, 1);
 	}
 		ENDCG
 	}

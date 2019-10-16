@@ -45,7 +45,7 @@
 			   noise = sin(100 * noise);
 			   noise = noise * 0.5 + 0.5;
 
-		   return float4 (noise, noise, noise, 1);
+		   return float4 (noise+30, noise+30, noise, 1);
 			}
             ENDCG
         }
